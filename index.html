@@ -167,6 +167,44 @@
     }
     .btn-outline:hover { border-color: var(--accent); color: var(--accent); transform: translateY(-2px); }
 
+
+    /* Custom credential link styles */
+    .credential-link {
+      color: var(--accent);
+      font-family: var(--ff-mono);
+      font-size: 0.7rem;
+      text-decoration: none;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.3rem;
+      margin-top: 0.5rem;
+      transition: gap 0.2s;
+    }
+    
+    .credential-link:hover {
+      gap: 0.5rem;
+      color: var(--accent3);
+    }
+    
+    .project-links {
+      margin-top: 1rem;
+      display: flex;
+      gap: 1rem;
+      flex-wrap: wrap;
+    }
+    
+    .project-link {
+      color: var(--accent);
+      font-family: var(--ff-mono);
+      font-size: 0.75rem;
+      text-decoration: none;
+      transition: color 0.2s;
+    }
+    
+    .project-link:hover {
+      color: var(--accent3);
+    }
+  
     /* Terminal card */
     .terminal {
       background: var(--card);
@@ -960,40 +998,55 @@
     <div class="section-divider reveal"></div>
 
     <div class="certs-grid">
+      
+      <!-- ChatGPT Certificate -->
       <div class="cert-card reveal">
         <div class="cert-icon">🤖</div>
         <div>
           <div class="cert-name">ChatGPT: Master Free AI Tools to Supercharge Productivity</div>
           <div class="cert-issuer">Vanderbilt University · Coursera</div>
           <div class="cert-date">February 2026</div>
+          <a href="https://www.coursera.org/account/accomplishments/specialization/BMARCC69CZA3" target="_blank" class="credential-link">
+            🔗 View Certificate →
+          </a>
         </div>
       </div>
 
+      <!-- Google Cybersecurity Certificate -->
       <div class="cert-card reveal">
         <div class="cert-icon">🔐</div>
         <div>
           <div class="cert-name">Google Cybersecurity Professional Certificate</div>
           <div class="cert-issuer">Google · Coursera</div>
           <div class="cert-date">January 2026</div>
+          <a href="https://www.coursera.org/account/accomplishments/specialization/B7Y6E7HIKG4Q" target="_blank" class="credential-link">
+            🔗 Verify Credential →
+          </a>
         </div>
       </div>
 
+      <!-- IBM Ethical Hacking -->
       <div class="cert-card reveal">
         <div class="cert-icon">💻</div>
         <div>
           <div class="cert-name">IBM Ethical Hacking with Open-Source Tools</div>
           <div class="cert-issuer">IBM · Coursera</div>
           <div class="cert-date">In Progress</div>
+          <a href="https://www.coursera.org/account/accomplishments/verify/I1LIWIMDJVCL" target="_blank" class="credential-link">
+            📖 View Course →
+          </a>
           <span class="cert-badge">In Progress</span>
         </div>
       </div>
 
+      <!-- TestOut PC Pro -->
       <div class="cert-card reveal">
         <div class="cert-icon">🖥️</div>
         <div>
           <div class="cert-name">TestOut PC Pro Certification</div>
           <div class="cert-issuer">TestOut Corporation</div>
           <div class="cert-date">April 2024</div>
+          </a>
         </div>
       </div>
     </div>
